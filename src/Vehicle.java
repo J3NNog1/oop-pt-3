@@ -27,4 +27,31 @@ class Car extends Vehicle {
     super(brand, model, year);
     this.numDoors = numDoors;
     }
+    public void honk(){
+        System.out.println("Honk! Honk!");
+    }
 }
+class Motorcycle extends Vehicle {
+    private boolean hasHelmet;
+    public Motorcycle(String brand, String model, int year, boolean hasHelmet) {
+        super(brand, model, year);
+        this.hasHelmet = hasHelmet;
+
+    }
+    public void wheelie() {
+        System.out.println("I just did a wheelie!");
+    }
+}
+
+class Truck extends Vehicle {
+    private double payloadCapacity;
+    public Truck(String brand, String model, int year, double payloadCapacity){
+        super(brand, model, year);
+        this.payloadCapacity = payloadCapacity;
+
+    }
+    public void loadCargo() {
+        System.out.println("Loading cargo into the truck.");
+    }
+}
+
