@@ -10,13 +10,21 @@ class Vehicle {
     public void start() {
         System.out.println("The vehicle is starting.");
     }
+    public void stop() {
+        System.out.println("This vehicle is stopping.");
+    }
 
     public void displayInfo(){
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);
     }
-    public static void main(String [] args){
 
+}
+class Car extends Vehicle {
+    private int numDoors;
+    public Car(String brand, String model, int year, int numDoors) {
+    super(brand, model, year);
+    this.numDoors = numDoors;
     }
 }
