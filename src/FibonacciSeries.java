@@ -1,3 +1,5 @@
+//below ive create a fibonacci series
+
 public class FibonacciSeries {
     public static void main(String[] args) {
         int n = (34);
