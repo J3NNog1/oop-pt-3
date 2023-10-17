@@ -55,3 +55,13 @@ class Truck extends Vehicle {
     }
 }
 
+class Plane extends Vehicle {
+    private boolean turbineEngine;
+    public Plane (String brand, String model, int year, boolean turbineEngine){
+        super(brand, model, year);
+        this.turbineEngine = turbineEngine;
+    }
+    public void flying(){
+        System.out.println("The captain is flying the plane.");
+    }
+}
